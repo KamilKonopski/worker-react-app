@@ -1,0 +1,39 @@
+.app {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newWorker {
+    margin: 20px auto;
+    width: 40%;
+}
+
+.newWorker h2 {
+    margin-bottom: 10px;
+}
+
+.searchWorkers {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 40%;
+}
+
+.allWorkers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.allWorkers h2 {
+    margin-bottom: 10px;
+}
+
+.workers {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+}
+
