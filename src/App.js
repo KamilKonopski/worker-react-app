@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './App.css';
-
-import Worker from './components/Worker/Worker'
-import AddWorker from './components/AddWorker/AddWorker'
+import AddWorker from './components/AddWorker/AddWorker';
 import SearchWorker from './components/SearchWorker/SearchWorker';
 import SummarySalary from './components/SummarySalary/SummarySalary';
+import Worker from './components/Worker/Worker';
+
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
