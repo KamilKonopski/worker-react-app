@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 
 import './SummarySalary.css';
 
-
-
-const SummarySalary = props => {
+function SummarySalary(props) {
 
     const [salaryOfDepartment, setSalaryOfDepartment] = useState([]);
-    let [result, setResult] = useState(0);
+    const [result, setResult] = useState(0);
 
-    const handleSummarySalary = event => {
+    function handleSummarySalary(event) {
         const searchWord = event.target.value;
         const searchedDepartment = props.workers.filter(value => {
             return value.department.includes(searchWord);
