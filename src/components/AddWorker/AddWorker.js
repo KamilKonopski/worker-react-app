@@ -2,34 +2,34 @@ import React, { useState } from 'react';
 
 import './AddWorker.css';
 
-const AddWorker = props => {
+function AddWorker(props) {
 
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [department, setDepartment] = useState('');
     const [salary, setSalary] = useState('');
 
-    const changeFirstNameHandler = event => {
+    function changeFirstNameHandler(event) {
         const value = event.target.value;
         setFirstName(value);
     };
 
-    const changeLastNameHandler = event => {
+    function changeLastNameHandler(event) {
         const value = event.target.value;
         setLastName(value);
     };
 
-    const changeDepartmentHandler = event => {
+    function changeDepartmentHandler(event) {
         const value = event.target.value;
         setDepartment(value);
     };
 
-    const changeSalaryHandler = event => {
+    function changeSalaryHandler(event) {
         const value = event.target.value;
         setSalary(value);
     };
 
-    const addWorker = () => {
+    function addWorker() {
         const worker = {
             firstName,
             lastName,
