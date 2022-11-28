@@ -2,9 +2,7 @@ import React from 'react';
 
 import './Worker.css'
 
-const Worker = props => {
-
-
+function Worker(props) {
     return (
         <div className='worker'>
             <p>{props.id + 1}.</p>
