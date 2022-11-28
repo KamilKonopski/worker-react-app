@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import './SearchWorker.css';
 
-const SearchWorker = props => {
+function SearchWorker(props) {
 
     const [filteredPerson, setFilteredPerson] = useState([]);
     const [filteredDepartment, setFilteredDepartment] = useState([]);
     const [filteredSalary, setFilteredSalary] = useState([]);
 
-    const handleSearchPerson = event => {
+    function handleSearchPerson(event) {
         const searchPerson = event.target.value;
         const newFilter = props.workers.filter(value => {
            return  value.lastName.toLowerCase().includes(searchPerson);   
@@ -21,7 +21,7 @@ const SearchWorker = props => {
        };
     };
 
-    const handleSearchDepartment = event => {
+    function handleSearchDepartment(event) {
         const searchDepartment = event.target.value;
         const newFilter = props.workers.filter(value => {
             return value.department.includes(searchDepartment);
@@ -34,7 +34,7 @@ const SearchWorker = props => {
         };
     };
 
-    const handleSearchSalary = event => {
+    function handleSearchSalary(event) {
         const searchSalary = event.target.value;
         const newFilter = props.workers.filter(value => {
             return value.salary.toString().includes(searchSalary);
